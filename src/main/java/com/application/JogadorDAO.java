@@ -79,6 +79,7 @@ public class JogadorDAO {
     }
 
     public Jogador buscarPorID(int id) {
+        // SQL para selecionar/buscar por ID
         var sql = "SELECT * FROM jogador WHERE id = ?";
     
         try (var conexao = Conexao.obterConexao();
@@ -116,7 +117,7 @@ public class JogadorDAO {
     }
 
     public void atualizar(Jogador jogador) {
-        // SQL correto para atualizar os dados do jogador
+        // SQL para atualizar os dados do jogador
         var sql = "UPDATE jogador SET nome = ?, idade = ?, pe = ?, posicao = ?, camisa = ?, naturalidade = ?, clube = ? WHERE id = ?";
     
         try (var conexao = Conexao.obterConexao();
@@ -144,7 +145,7 @@ public class JogadorDAO {
     }
     
     public void excluir(int id) {
-        // SQL correto para excluir um jogador
+        // SQL para excluir um jogador
         var sql = "DELETE FROM jogador WHERE id = ?";
     
         try (var conexao = Conexao.obterConexao();

@@ -1,4 +1,4 @@
-package com.example;
+package com.application;
 
 public class Jogador {
     private int id;
@@ -9,7 +9,7 @@ public class Jogador {
     private String posicao;
     private String pe;
     private String clube;
-    
+
     public int getId() {
         return id;
     }
